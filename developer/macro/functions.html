@@ -159,6 +159,7 @@ Reverses (inverts) the order of the elements in <i>array</i>.
 Displays the contents of <i>array</i> in a window.
 <br>
 
+<a name="Array.show_multiple"></a>
 <b>Array.show("title", array1, array2, ...)</b> - 
 Displays one or more arrays in a Results window
 (<a href="../../macros/examples/ShowArrayDemo.txt">examples</a>).
@@ -181,6 +182,7 @@ Sorts <i>array</i>, which must contain all numbers or all strings.
 String sorts are case-insensitive.
 <br>
 
+<a name="Array.sort_multiple"></a>
 <b>Array.sort(array1, array2, array3...)</b> - 
 Sorts multiple arrays, where all the arrays adopt the sort
 order of <i>array1</i>
@@ -239,8 +241,8 @@ is called or when the macro terminates.
 Emits an audible beep.
 <p>
 
-<a name="butDepth"></a>
 <b>bitDepth() </b><br> 
+<a name="bitDepth"></a>
 Returns the bit depth of the active image: 8, 16, 24 (RGB) or 32 (float).
 
 <p>
@@ -262,6 +264,7 @@ and the <a href="https://imagej.net/ij/plugins/imp-props.html">ImpProps</a>
 plugin for examples.
 <p>
 
+<a name="call_no_args"></a>
 <b>call("class.method")</b><br>
 Calls a public static no-argument method in a Java class and returns a string.
 <p>
@@ -325,6 +328,7 @@ Sets the drawing color, where 'string' is
 "red", "blue", etc., or a hex value like "#ff0000".  
 <br>
 
+<a name="Color.set_value"></a>
 <b>Color.set(value)</b><br>
 Sets the drawing color. For 8 bit images, 0&lt;=<i>value</i>&lt;=255.
 For 16 bit images, 0&lt;=<i>value</i>&lt;=65535. With RGB images,
@@ -355,10 +359,12 @@ Sets the background color to grayscale, where
 'value' is a number between 0 (black) and 255 (white).  
 <br>
 
+<a name="Color.setForeground_r_g_b"></a>
 <b>Color.setForeground(r, g, b)</b><br>
 Sets the foreground color, where <i>r</i>, <i>g</i>, and <i>b</i> are &gt;= 0 and &lt;= 255.
 <br>
 
+<a name="Color.setBackground_r_g_b"></a>
 <b>Color.setBackground(r, g, b)</b><br>
 Sets the background color, where <i>r</i>, <i>g</i>, and <i>b</i> are &gt;= 0 and &lt;= 255.
 <br>
@@ -456,6 +462,7 @@ Creates a non-modal dialog box with the specified title.
 Adds a message to the dialog. The message can be broken into multiple
 lines by inserting new line characters ("\n") into the string.
 <br>
+<a name="Dialog.addMessage_font_size"></a>
 <b>Dialog.addMessage(string, fontSize, fontColor)</b> -
 Adds a message to the dialog using a specified font size
 and color
@@ -469,6 +476,7 @@ Requires 1.52q.
 <b>Dialog.addString(label, initialText)</b> -
 Adds a text field to the dialog, using the specified label and initial text.
 <br>
+<a name="Dialog.addString_columns"></a>
 <b>Dialog.addString(label, initialText, columns)</b> -
 Adds a text field to the dialog, where <i>columns</i> specifies the field 
 width in characters.
@@ -477,6 +485,7 @@ width in characters.
 <b>Dialog.addNumber(label, default)</b> -
 Adds a numeric field to the dialog, using the specified label and default value.
 <br>
+<a name="Dialog.addNumber_decimalPlaces"></a>
 <b>Dialog.addNumber(label, default, decimalPlaces, columns, units)</b> -
 Adds a numeric field, using the specified label and default value. <i>DecimalPlaces</i>
 specifies the number of digits to right of decimal point, <i>columns</i> specifies the the field 
@@ -496,6 +505,7 @@ are non-integer.
 <b>Dialog.addCheckbox(label, default)</b> -
 Adds a checkbox to the dialog, using the specified label and default state (true or false).
 <br>
+<a name="Dialog.addCheckboxGroup"></a>
 <b>Dialog.addCheckboxGroup(rows, columns, labels, defaults)</b> -
 Adds a <i>rows</i>x<i>columns</i> grid of checkboxes to the dialog, using the specified labels and default states
 (<a href="../../macros/AddCheckboxGroupDemo.txt">example</a>).
@@ -511,6 +521,7 @@ an array containing the button labels, 'rows' and 'columns' specify the grid siz
 <b>Dialog.addChoice(label, items)</b> -
 Adds a popup menu to the dialog, where <i>items</i> is a string array containing the menu items.
 <br>
+<a name="Dialog.addChoice_default"></a>
 <b>Dialog.addChoice(label, items, default)</b> -
 Adds a popup menu, where <i>items</i> is a string array containing the choices
 and <i>default</i> is the default choice.
@@ -546,6 +557,7 @@ Use Dialog getImageChoice() to retrieve the title of
 the selected image. The macro aborts if there are no
 open images. Requires 1.53d.
 <br>
+<a name="Dialog.addImageChoice_defaultImage"></a>
 <b>Dialog.addImageChoice(label, defaultImage)</b> -
 This a version of addImageChoice() with a second argument
 for specifying the selected image in the dropdown menu.
@@ -634,6 +646,7 @@ may not be reliably traced unless they have been thresholded (highlighted in red
 using <a href="#setThreshold">setThreshold</a>.
 <p>
 
+<a name="doWand_tolerance"></a>
 <b>doWand(x, y, tolerance, mode)</b><br>
 Traces the boundary of the area with pixel values within
 'tolerance' of the value of the pixel at (x, y).
@@ -690,6 +703,7 @@ and to
 to see how to draw text with a background.
 <p>
 
+<a name="drawString_background"></a>
 <b>drawString("text", x, y, background)</b><br>
 Draws text at the specified location with a filled background
 (<a href="../../macros/examples/DrawTextWithBackground.txt">examples</a>).
@@ -721,6 +735,7 @@ See also:
 <a href="#runMacro">runMacro</a> function.
 <p>
 
+<a name="eval_script"></a>
 <b>eval("script", javascript)</b><br>
 Evaluates the
 <a href="../javascript.html">JavaScript</a>
@@ -731,6 +746,7 @@ For example
 See also: <a href="#runMacro">runMacro(path, arg)</a>.
 <p>
 
+<a name="eval_js"></a>
 <b>eval("js", script)</b><br>
 Evaluates the
 <a href="../javascript.html">JavaScript</a>
@@ -741,12 +757,14 @@ For example
 either "true" or "false".
 <p>
 
+<a name="eval_bsh"></a>
 <b>eval("bsh", script)</b><br>
 Evaluates the
 <a href="https://imagej.net/ij/plugins/bsh/index.html">BeanShell</a>
 code contained in the string <i>script</i>.
 <p>
 
+<a name="eval_python"></a>
 <b>eval("python", script)</b><br>
 Evaluates the
 <a href="https://imagej.net/ij/plugins/jython/index.html">Python</a>
@@ -770,6 +788,7 @@ macro for examples.
 Terminates execution of the macro. 
 <p>
 
+<a name="exit_message"></a>
 <b>exit("error message")</b><br>
 Terminates execution of the macro and displays an error message. 
 <p>
@@ -1037,6 +1056,7 @@ can be either the equation name or an index. The equation names are shown in the
  (<a href="../../macros/examples/UserDefinedCurveFits.txt">example</a>).
 <br>
 
+<a name="Fit.doFit_initialGuesses"></a>
 <b>Fit.doFit(equation, xpoints, ypoints, initialGuesses)</b> - 
 Fits the specified equation to the points defined by <i>xpoints</i>, <i>ypoints</i>, using initial parameter
 values contained in <i>initialGuesses</i>, an array equal in length to the number of
@@ -1044,6 +1064,7 @@ parameters in <i>equation</i>
 (<a href="../../macros/examples/RodbardSigmoidFit.txt">example</a>).
 <br>
 
+<a name="Fit.doWeightedFit"></a>
 <b>Fit.doWeightedFit(equation, xpoints, ypoints, weights, initialGuesses)</b> -
 Fits the specified equation to the points defined by 'xpoints', 'ypoints',
 with the weight of each data point given by the 'weights' array.
@@ -1085,6 +1106,7 @@ Returns the number of equations.
 Returns the name and formula of the specified equation.
 <br>
 
+<a name="Fit.getEquation_macroCode"></a>
 <b>Fit.getEquation(index, name, formula, macroCode)</b> - 
 Returns the name, formula and macro code of the specified equation.
 <br>
@@ -1148,6 +1170,7 @@ Returns <i>true</i> (1) if the user clicks "Yes", returns <i>false</i> (0) if th
 "No" and exits the macro if the user clicks "Cancel".
 <p>
 
+<a name="getBoolean_yes_no"></a>
 <b>getBoolean(message, yesLabel, noLabel)</b><br>
 Displays a dialog box containing the specified message and buttons with custom labels.
 <p>
@@ -1195,31 +1218,44 @@ See also: <a href="#getFileList">getFileList</a> and the <a href="#file">File fu
 
 <blockquote>
 
+<a name="getDir_title"></a>
 <b>getDir("Choose a Directory")</b> - 
 Displays a file open dialog, using the argument as a title, and
 returns the path to the directory selected by the user.<br>
+<a name="getDir_downloads"></a>
 <b>getDir("downloads")</b> - 
 Returns the path to the Downloads directory.<br>
+<a name="getDir_file"></a>
 <b>getDir("file")</b> - 
 Returns the path most recently used to open or save a file.<br>
+<a name="getDir_home"></a>
 <b>getDir("home")</b> - 
 Returns the path to the Home directory.<br>
+<a name="getDir_image"></a>
 <b>getDir("image")</b> - 
 Returns the path to the directory that the active image was loaded from.<br>
+<a name="getDir_imagej"></a>
 <b>getDir("imagej")</b> - 
 Returns the path to the ImageJ directory.<br>
+<a name="getDir_luts"></a>
 <b>getDir("luts")</b> - 
 Returns the path to the luts directory.<br>
+<a name="getDir_macros"></a>
 <b>getDir("macros")</b> - 
 Returns the path to the macros directory.<br>
+<a name="getDir_plugins"></a>
 <b>getDir("plugins")</b> - 
 Returns the path to the plugins directory.<br>
+<a name="getDir_startup"></a>
 <b>getDir("startup")</b> - 
 Returns the path to the directory that ImageJ was launched from.<br>
+<a name="getDir_temp"></a>
 <b>getDir("temp")</b> - 
 Returns the path to the temporary directory (/tmp on Linux and Mac OS X).<br>
+<a name="getDir_cwd"></a>
 <b>getDir("cwd")</b> - 
 Returns the path to the current working directory.<br>
+<a name="getDir_preferences"></a>
 <b>getDir("preferences")</b> - 
 Returns the path to the directory containing "IJ_Prefs.txt".<br>
 
@@ -1282,62 +1318,70 @@ it is open or active.
 Returns a string containing the text that would
 be displayed by the <i>Image&gt;Show Info</i> command. 
 To retrieve the contents of a text window, use 
-<a HREF="#getInfo">getInfo("window.contents")</a>. 
+<a HREF="#getInfo_window.contents">getInfo("window.contents")</a>. 
 For an example, see the
 <a HREF="../../macros/ListDicomTags.txt">ListDicomTags</a> macros.
 See also: <a href="#getMetadata">getMetadata</a> and
 <a href="#Property.getInfo">Property.getInfo</a>.
 <p>
 
-<a name="getInfo"></a>
-<a name="font-name"></a>
+<a name="getInfo_command.name"></a>
 <b>getInfo("command.name")</b><br>
 Returns the name of the most recently invoked command. The names of commands invoked
 using keyboard shortcuts are preceded by "^"
 (<a href="../../macros/examples/GetCommandNameDemo.txt">example</a>).
 <p>
 
+<a name="getInfo_DICOM_TAG"></a>
 <b>getInfo(DICOM_TAG)</b><br>
 Returns the value of a DICOM tag in the form "xxxx,xxxx",
 e.g. getInfo("0008, 0060"). Returns an empty string if
 the current image is not a DICOM or if the tag was not found.
 <p>
 
+<a name="getInfo_font.name"></a>
 <b>getInfo("font.name")</b><br>
 Returns the name of the current font.
 <p>
 
+<a name="getInfo_image.description"></a>
 <b>getInfo("image.description")</b><br>
 Returns the TIFF image description tag, or an empty string
 if this is not a TIFF image or the image description is not
 available.
 <p>
 
+<a name="getInfo_image.directory"></a>
 <b>getInfo("image.directory")</b><br>
 Returns the directory that the current image was loaded
 from, or an empty string if the directory is not available.
 <p>
 
+<a name="getInfo_image.filename"></a>
 <b>getInfo("image.filename")</b><br>
 Returns the name of the file that the current image was loaded
 from, or an empty string if the file name is not available.
 <p>
 
+<a name="getInfo_image.title"></a>
 <b>getInfo("image.title")</b><br>
 Returns the title of the current image. Same as
 <a href="#getTitle">getTitle</a>.
 <p>
 
+<a name="getInfo_image.subtitle"></a>
 <b>getInfo("image.subtitle")</b><br>
 Returns the subtitle of the current image. This is the line of
 information displayed above the image and below the title bar.
 <p>
 
+<a name="getInfo_log"></a>
 <b>getInfo("log")</b><br>
 Returns the contents of the Log window,
 or "" if the Log window is not open.
 <p>
 
+<a name="getInfo_macro.filepath"></a>
 <b>getInfo("macro.filepath")</b><br>
 Returns the filepath of the most recently loaded macro or script.
 Use <i>File.getName(getInfo("macro.filepath"))</i> to get the file name
@@ -1345,24 +1389,29 @@ and <i>File.getDirectory(getInfo("macro.filepath"))</i> to get
 the directory.
 <p>
 
+<a name="getInfo_micrometer.abbreviation"></a>
 <b>getInfo("micrometer.abbreviation")</b><br>
 Returns "&micro;m", the abbreviation for micrometer.
 <p>
 
+<a name="getInfo_os.name"></a>
 <b>getInfo("os.name")</b><br>
 Returns the OS name ("Mac OS X", "Linux" or "Windows").
 <p>
 
+<a name="getInfo_overlay"></a>
 <b>getInfo("overlay")</b><br>
 Returns information about the current image's overlay.
 <p>
 
+<a name="getInfo_selection.name"></a>
 <b>getInfo("selection.name")</b><br>
 Returns the name of the current selection, or "" if there is no selection
 or the selection does not have a name. The argument can also be
 "roi.name". See also: <a href="#Roi.getName">Roi.getName</a>.
 <p>
 
+<a name="getInfo_selection.color"></a>
 <b>getInfo("selection.color")</b><br>
 Returns the color of the current selection.
 See also: <a href="#Roi.getStrokeColor">Roi.getStrokeColor</a>.
@@ -1377,14 +1426,17 @@ string if the current image is not a stack or the current
 slice does not have a label.
 <p>
 
+<a name="getInfo_threshold.method"></a>
 <b>getInfo("threshold.method")</b><br>
 Returns the current thresholding method ("IsoData", "Otsu", etc).
 <p>
 
+<a name="getInfo_threshold.mode"></a>
 <b>getInfo("threshold.mode")</b><br>
 Returns the current thresholding mode ("Red", "B&W" or"Over/Under").
 <p>
 
+<a name="getInfo_window.contents"></a>
 <b>getInfo("window.contents")</b><br>
 If the front window is a text window, returns the contents of that window. 
 If the front window is an image, returns a string containing the text that would
@@ -1395,12 +1447,14 @@ Use split(getInfo(), '\n') to break the string returned by this function into se
 Replaces the getInfo() function.
 <p>
 
+<a name="getInfo_window.title"></a>
 <b>getInfo("window.title")</b><br>
 Returns the title of the front-most window.
 Use <a href="#getTitle">getTitle</a> to
 get the title of the current batch mode image.
 <p>
 
+<a name="getInfo_window.type"></a>
 <b>getInfo("window.type")</b><br>
 Returns the type ("Image", "Text", "ResultsTable", "Editor", "Plot", "Histogram", etc.) of the front window.
 <p>
@@ -1432,6 +1486,7 @@ For an example, see the
 <a href="../../macros/DisplayWindowTitles.txt">DisplayWindowTitles</a> macro.
 <p>
 
+<a name="getList-window.titles"></a>
 <b>getList("window.titles")</b><br>
 Returns a list (array) of non-image window titles.
 For an example, see the
@@ -1485,6 +1540,7 @@ See also: <a href="#setMetadata">setMetadata</a> and
 <a href="#Property.getInfo">Property.getInfo</a>. 
 <p>
 
+<a name="getMetadata_label"></a>
 <b>getMetadata("Label")</b><br>
 Returns the current slice label.
 The first line of the this label (up to 60 characters) is displayed
@@ -1826,6 +1882,7 @@ when the users clicks in the ImageJ status bar.
 Returns the MD5 (or SHA-256) checksum from a string.
 <br>
 
+<a name="IJ.checksum_filepath"></a>
 <b>IJ.checksum("MD5 file", filepath)</b> - 
 Returns the MD5 (or SHA-256) checksum from a file.
 If 'filepath' is a directory or invalid, "0" is returned.
@@ -1867,6 +1924,7 @@ and prevents the macro from being aborted
 Changes the title of the "Results" table to the string <i>name</i>.
 <br>
 
+<a name="IJ.renameResults_oldName"></a>
 <b>IJ.renameResults(oldName, newName)</b> - 
 Changes the title of a results table from <i>oldName</i> to <i>newName</i>.
 <br>
@@ -1907,6 +1965,7 @@ Inserts the contents of the internal clipboard at the
 specified location in the active image.
 <br>
 
+<a name="Image.paste_mode"></a>
 <b>Image.paste(x, y, mode)</b><br>
 Inserts the contents of the internal clipboard at
 <i>x,y</i> using the specified transfer mode
@@ -1946,47 +2005,56 @@ See also:
 <a href="#matches">matches</a>. 
 <p>
 
+<a name="indexOf_fromIndex"></a>
 <b>indexOf(string, substring, fromIndex)</b><br>
 Returns the index within <i>string</i> of the first occurrence of
 <i>substring</i>, with the search starting at <i>fromIndex</i>.
 <p>
 
-<a name="is"></a>
+<a name="is_animated"></a>
 <b>is("animated")</b><br>
 Returns <i>true</i> if the current image is an animated stack.
 <p>
 
+<a name="is_applet"></a>
 <b>is("applet")</b><br>
 Returns <i>true</i> if ImageJ is running as an applet.
 <p>
 
+<a name="is_area"></a>
 <b>is("area")</b><br>
 Returns <i>true</i> if the current image has an area selection.
 Requires 1.52m.
 <p>
 
+<a name="is_batch_mode"></a>
 <b>is("Batch Mode")</b><br>
 Returns <i>true</i> if the macro interpreter is running in batch mode.
 <p>
 
+<a name="is_binary"></a>
 <b>is("binary")</b><br>
 Returns <i>true</i> if the current image is binary (8-bit with only 0 and 255 values).
 <p>
 
+<a name="is_caps_lock"></a>
 <b>is("Caps Lock Set")</b><br>
 Returns <i>true</i> if the caps lock key is set. Always return <i>false</i>
 on some platforms.
 <p>
 
+<a name="is_changes"></a>
 <b>is("changes")</b><br>
 Returns <i>true</i> if the current image's 'changes' flag is set.
 <p>
 
+<a name="is_composite"></a>
 <b>is("composite")</b><br>
 Returns <i>true</i> if the current image is a a multi-channel
 stack that uses the CompositeImage class.
 <p>
 
+<a name="is_fft"></a>
 <b>is("FFT")</b><br>
 Returns <i>true</i> if the current image is a Fourier transform image,
 an 8-bit image showing the logarithm of the power spectrum,
@@ -1994,36 +2062,44 @@ with the full Fourier transform data in the background (so you can do
 an inverse transform).
 <p>
 
+<a name="is_global_scale"></a>
 <b>is("global scale")</b><br>
 Returns <i>true</i> if there is global spatial calibration.
 <p>
 
+<a name="is_grayscale"></a>
 <b>is("grayscale")</b><br>
 Returns <i>true</i> if the current image is grayscale, or
 an RGB image with identical R, G and B channels.
 <p>
 
+<a name="is_inverting_lut"></a>
 <b>is("Inverting LUT")</b><br>
 Returns <i>true</i> if the current image is using an inverting (monotonically decreasing) lookup table.
 <p>
 
+<a name="is_invertY"></a>
 <b>is("InvertY")</b><br>
 Returns <i>true</i> if the 'invertY' property of the active image is enabled.
 <p>
 
+<a name="is_line"></a>
 <b>is("line")</b><br>
 Returns <i>true</i> if the current image has a line selection.
 Requires 1.52m.
 <p>
 
+<a name="is_locked"></a>
 <b>is("locked")</b><br>
 Returns <i>true</i> if the current image is locked.
 <p>
 
+<a name="is_virtual_stack"></a>
 <b>is("Virtual Stack")</b><br>
 Returns <i>true</i> if the current image is a virtual stack.
 <p>
 
+<a name="isActive"></a>
 <b>isActive(id)</b><br>
 Returns <i>true</i> if the image with the specified ID is active.
 <p>
@@ -2051,6 +2127,7 @@ macro demonstrates how to remove NaNs from an image.
 Returns <i>true</i> if the image with the specified ID is open.
 <p>
 
+<a name="isOpen_title"></a>
 <b>isOpen("Title")</b><br>
 Returns <i>true</i> if the window with the specified title is open.
 <p>
@@ -2140,6 +2217,7 @@ function to get a single measurement value. Examples: <i>getValue("Mean")</i>,
 <br>
 
 <b> List.setMeasurements("limit")</b> - 
+<a name="List.setMeasurements_limit"></a>
 This is a version of List.setMeasurements that enables the
 "Limit to threshold" option.
 <br>
@@ -2202,11 +2280,13 @@ to set the width and <a href="#Roi.setStrokeColor">Roi.setStrokeColor</a>
 to set the color.
 <p>
 
+<a name="makeLine_width"></a>
 <b>makeLine(x1, y1, x2, y2, lineWidth)</b><br>
 Creates a straight line selection with the specified width.
 See also: <a href="#getLine">getLine</a>.
 <p>
 
+<a name="makeLine_segmented"></a>
 <b>makeLine(x1, y1, x2, y2, x3, y3, ...)</b><br>
 Creates a segmented line selection.
 After creating the selection, use <a href="#Roi.setStrokeWidth">Roi.setStrokeWidth</a>
@@ -2221,7 +2301,7 @@ Creates an elliptical selection, where (<i>x, y</i>) define the upper left
 corner of the bounding rectangle of the ellipse.
 <p>
 
-<a name="makePoint"></a>
+<a name="makePoint_options"></a>
 <b>makePoint(x, y, options)</b><br>
 Creates a point selection at the specified location, with the type ('hybrd', 'cross',
 'dot' or 'circle'), color ('red', 'white', etc.) and size ('tiny', 'small', 'medium', 'large'
@@ -2234,6 +2314,7 @@ Create a multi-point selection by using <i>makeSelection("point", xpoints, ypoin
 All the makePoint() options ('cross', 'small', 'red', etc.) can be added to first argument.
 <p>
 
+<a name="makePoint"></a>
 <b>makePoint(x, y)</b><br>
 Creates a point selection at the specified location. Create
 a multi-point selection by using
@@ -2256,6 +2337,7 @@ Creates a rectangular selection, where <i>x</i> and <i>y</i> are the coordinates
 coordinate system is the upper left corner of the image.
 <p>
 
+<a name="makeRectangle_rounded"></a>
 <b>makeRectangle(x, y, width, height, arcSize)</b><br>
 Creates a rounded rectangular selection using the specified corner arc size. 
 <p>
@@ -2599,6 +2681,7 @@ Sets the stack position (slice number) of the last item added to the overlay
 Set the position to 0 and the item will be displayed on all stack slices.
 <br>
 
+<a name="Overlay.setPosition_czt"></a>
 <b>Overlay.setPosition(c, z, t)</b><br>
 Sets the hyperstack position (channel, slice, frame) of the
 last item added to the overlay. Set a position to 0 and the item
@@ -2626,6 +2709,7 @@ and <a href="#setColor">setColor</a> to set specify the color
 (<a href="../../macros/examples/OverlayDrawStringDemo.txt">example</a>).
 <br>
 
+<a name="Overlay.drawString_angle"></a>
 <b>Overlay.drawString("text", x, y, angle)</b><br>
 Draws text at the specified location and angle and adds it to the overlay
 (<a href="../../macros/examples/RotatedText.txt">example</a>).
@@ -2666,16 +2750,19 @@ Returns the size (selection count) of the current overlay. Returns zero if the i
 Adds the current selection to the overlay.
 <br>
 
+<a name="Overlay.addSelection_strokeColor"></a>
 <b>Overlay.addSelection(strokeColor)</b><br>
 Sets the stroke color ("red", "green", "ff8800", etc.) of the current selection
 and adds it to the overlay.
 <br>
 
+<a name="Overlay.addSelection_strokeWidth"></a>
 <b>Overlay.addSelection(strokeColor, strokeWidth)</b><br>
 Sets the stroke color ("blue", "yellow", "ffaa77" etc.) and stroke width of the 
 current selection and adds it to the overlay.
 <br>
 
+<a name="Overlay.addSelection_fillcolor"></a>
 <b>Overlay.addSelection("", 0, fillColor)</b><br>
 Sets the fill color ("red", "green", etc.) of the current selection
 and adds it to the overlay.
@@ -2802,6 +2889,7 @@ Fills all the selections in the overlay with 'color'.
 Requires 1.53h.
 <br>
 
+<a name="Overlay.fill_clear"></a>
 <b>Overlay.fill(color1, color2)</b><br>
 Fills all the selections in the overlay with 'color1' after
 clearing the the image to 'color2'.
@@ -2870,6 +2958,7 @@ as the X values. It is also permissible to specify no arrays and use <i>Plot.set
 Use <i>Plot.show()</i> to display the plot in a window, or it will be displayed automatically when
 the macro exits.
 <br>
+<a name="Plot.create_categories"></a>
 <b>Plot.create("Title", "{cat1, cat2, cat3}", "Y-axis Label")</b><br>
 Draws category labels instead of x-axis numbers 0, 1, 2.
 <br>
@@ -2886,6 +2975,7 @@ Error bars (supplied by an optional fourth argument) apply to the last
 dataset provided by <i>Plot.create</i> or <i>Plot.add</i>.
 <br>
 
+<a name="Plot.add_label"></a>
 <b>Plot.add(type, xValues, yValues, label)</b><br>
 Adds a curve or set of points to the plot and sets the dataset
 label used by <a href="#Plot.showValuesWithLabels">Plot.showValuesWithLabels</a>.
@@ -2952,6 +3042,7 @@ The argument can be
 Note that the curve specified in <i>Plot.create()</i> is drawn last.
 <br>
 
+<a name="Plot.setColor_color2"></a>
 <b>Plot.setColor(color1, color2)</b><br>
 This is a two argument version of Plot.setColor, where the second argument
 is used for filling symbols or as the line color for connected points.
@@ -3251,6 +3342,7 @@ of the label are displayed as part of the image subtitle.
 Slice labels are saved in the TIFF header.
 <br>
 
+<a name="Property.setSliceLabel_current"></a>
 <b>Property.setSliceLabel(string)</b><br>
 Sets <i>string</i> as the label of the current stack slice.
 <br>
@@ -3278,10 +3370,12 @@ Requires 1.53b.
 Returns a uniformly distributed pseudorandom number between 0 and 1.
 <p>
 
+<a name="random_gaussian"></a>
 <b>random("gaussian")</b><br>
 Returns a Gaussian ("normally") distributed pseudorandom number with mean 0.0 and standard deviation 1.0.
 <p>
 
+<a name="random_seed"></a>
 <b>random("seed", seed)</b><br>
 Sets the seed (a whole number) used by the <i>random()</i> and <i>random("gaussian")</i> functions.
 Set a specific seed to get a reproducible pseudorandom sequence.
@@ -3473,11 +3567,13 @@ Requires 1.53v.
 Sets the selection stroke color ("red", "5500ff00". etc.).
 <br>
 
+<a name="Roi.setStrokeColor_r_g_b"></a>
 <b>Roi.setStrokeColor(red, green, blue)</b><br>
 Sets the selection stroke color, where 'red', 'green'
 and 'blue' are integers (0-255).
 <br>
 
+<a name="Roi.setStrokeColor_rgb"></a>
 <b>Roi.setStrokeColor(rgb)</b><br>
 Sets the selection stroke color, where 'rgb' is an integer.
 <br>
@@ -3489,6 +3585,7 @@ With 1.54e and later, set the stroke color after setting
 the fill color to both fill and outline the selection.
 <br>
 
+<a name="Roi.setFillColor_r_g_b"></a>
 <b>Roi.setFillColor(red, green, blue)</b><br>
 Sets the selection fill color, where 'red', 'green'
 and 'blue' are integers (0-255).
@@ -3496,6 +3593,7 @@ With 1.54e and later, set the stroke color after setting
 the fill color to both fill and outline the selection.
 <br>
 
+<a name="Roi.setFillColor_rgb"></a>
 <b>Roi.setFillColor(rgb)</b><br>
 Sets the selection fill color, where 'rgb' is an integer.
 With 1.54e and later, set the stroke color after setting
@@ -3568,6 +3666,7 @@ Sets the selection position.
 Requires 1.53b.
 <br>
 
+<a name="Roi.setPosition_channel"></a>
 <b>Roi.setPosition(channel, slice, frame)</b> - 
 Sets the selection position.
 Requires 1.52r.
@@ -3671,6 +3770,7 @@ to create a composite selection.
 Adds the current selection to the ROI Manager.
 <p>
 
+<a name="roiManager-add_draw"></a>
 <b>roiManager("add & draw")</b><br>
 Outlines the current selection and adds it to the ROI Manager.
 <p>
@@ -3723,25 +3823,25 @@ selected ROI if more than one is selected
 Measures the selected ROIs, or if none is selected, all ROIs on the list.
 <p>
 
-<a name="roiManager-multi measure"></a>
+<a name="roiManager-multi_measure"></a>
 <b>roiManager("multi measure")</b><br>
 Measures all the ROIs on all slices in the stack, creating a Results Table
 with one row per slice.
 <p>
 
-<a name="roiManager-multi-measure append"></a>
+<a name="roiManager-multi-measure_append"></a>
 <b>roiManager("multi-measure append")</b><br>
 Measures all the ROIs on all slices in the stack, appending the measurements
 to the Results Table, with one row per slice.
 <p>
 
-<a name="roiManager-multi-measure one"></a>
+<a name="roiManager-multi-measure_one"></a>
 <b>roiManager("multi-measure one")</b><br>
 Measures all the ROIs on all slices in the stack, creating a Results Table with
 one row per measurement.
 <p>
 
-<a name="roiManager-multi plot"></a>
+<a name="roiManager-multi_plot"></a>
 <b>roiManager("multi plot")</b><br>
 Plots the selected ROIs, or all ROIs if none are selected, on a single graph.<p>
 
@@ -3750,7 +3850,7 @@ Plots the selected ROIs, or all ROIs if none are selected, on a single graph.<p>
 Opens a .roi file and adds it to the list or opens a ZIP archive (.zip file) and
 adds all the selections contained in it to the list.<p>
 
-<a name="roiManager-remove slice info"></a>
+<a name="roiManager-remove_slice_info"></a>
 <b>roiManager("remove slice info")</b><br>
 Removes the information in the ROI names that associates them with particular stack slices.<p>
 
@@ -3771,7 +3871,7 @@ Deletes all ROIs on the list.
 Saves all the ROIs on the list in a ZIP archive.
 <p>
 
-<a name="roiManager-save selected"></a>
+<a name="roiManager-save_selected"></a>
 <b>roiManager("save selected", file-path)</b><br>
 Saves the selected ROI as a .roi file.
 <p>
@@ -3790,6 +3890,7 @@ See also: <a href="#RoiManager.select">RoiManager.select</a> and
 
 <p>
 
+<a name="roiManager-select_multiple"></a>
 <b>roiManager("select", indexes)</b><br>
 Selects multiple items in the ROI Manager list, where
 <i>indexes</i> is an array of integers, each of which must be greater
@@ -3798,17 +3899,19 @@ The selected ROIs are not highlighted in the ROI Manager list and
 are no longer selected after the next ROI Manager command is executed.
 <p>
 
-<a name="roiManager-show all"></a>
+<a name="roiManager-show_all"></a>
 <b>roiManager("show all")</b><br>
 Displays all the ROIs as an overlay.<p>
 
+<a name="roiManager-show_all_with_labels"></a>
 <b>roiManager("show all with labels")</b><br>
 Displays all the ROIs as an overlay, with labels.<p>
 
+<a name="roiManager-show_all_without_labels"></a>
 <b>roiManager("show all without labels")</b><br>
 Displays all the ROIs as an overlay, without labels.<p>
 
-<a name="roiManager-show none"></a>
+<a name="roiManager-show_none"></a>
 <b>roiManager("show none")</b><br>
 Removes the ROI Manager overlay.<p>
 
@@ -3866,6 +3969,7 @@ rotates the selected selections by 'angle'.
 Requires 1.53s.
 <br>
 
+<a name="RoiManager.rotate_center"></a>
 <b>RoiManager.rotate(angle, xcenter, ycenter)</b><br>
 Rotates the selected selections by 'angle', around
 'xcenter' and 'ycenter'.
@@ -3920,7 +4024,7 @@ See also: <a href="#Roi.setGroup">Roi.setGroup</a>,
 <a href="#Roi.getDefaultGroup">Roi.getDefaultGroup</a>.
 <br>
 
-<a name="RoiManager.setPosition</a">
+<a name="RoiManager.setPosition"></a>
 <b>RoiManager.setPosition</b><br>
 Sets the position of the selected selections.
 <br>
@@ -3970,6 +4074,7 @@ Executes an ImageJ menu command.  Use the Command Recorder
 (<i>Plugins&gt;Macros&gt;Record</i>) to generate run() function calls.
 <p>
 
+<a name="run_options"></a>
 <b>run(command, options)</b><br>
 Executes an ImageJ menu command with arguments. The 'options' string
 contains values that are automatically entered into dialog boxes
@@ -3993,6 +4098,7 @@ For an example, see the
 See also: <a href="#eval">eval</a>.
 <p>
 
+<a name="runMacro_arg"></a>
 <b>runMacro(name, arg)</b><br>
 Runs the specified macro or script, which is assumed to be in the
 macros folder, or use a full file path. The string argument 'arg' can be retrieved by the
@@ -4106,6 +4212,7 @@ See also:
 <a href="#setForegroundColor">setForegroundColor</a>.
 <p>
 
+<a name="setBackgroundColor_rgb"></a>
 <b>setBackgroundColor(rgb)</b><br>
 Sets the background color, where <i>rgb</i> is an RGB pixel value.
 See also:
@@ -4131,14 +4238,17 @@ Examples:
 <a href="../../macros/ReplaceRedWithMagenta.txt">ReplaceRedWithMagenta</a>.
 <p>
 
+<a name="setBatchMode_exit_and_display"></a>
 <b>setBatchMode("exit and display")</b><br>
 Exits batch mode and displays all hidden images.
 <p>
 
+<a name="setBatchMode_show"></a>
 <b>setBatchMode("show")</b><br>
 Displays the active hidden image, while batch mode remains in same state.
 <p>
 
+<a name="setBatchMode_hide"></a>
 <b>setBatchMode("hide")</b><br>
 Enters (or remains in) batch mode and hides the active image
 <p>
@@ -4156,6 +4266,7 @@ used to specify the color used by commands called from macros, for example <i>ru
 See also: <a href="#Color.set">Color.set</a>.
 <p>
 
+<a name="setColor_value"></a>
 <b>setColor(value)</b><br>
 Sets the drawing color. For 8 bit images, 0&lt;=<i>value</i>&lt;=255.
 For 16 bit images, 0&lt;=<i>value</i>&lt;=65535. For RGB images, use hex 
@@ -4163,6 +4274,7 @@ constants (e.g., 0xff0000 for red). This function does not change the foreground
 by <i>run("Draw")</i> and <i>run("Fill")</i>.
 <p>
 
+<a name="setColor_string"></a>
 <b>setColor(string)</b><br>
 Sets the drawing color, where 'string' can be 
 "black", "blue", "cyan", "darkGray", "gray", "green", "lightGray", 
@@ -4182,6 +4294,7 @@ For examples, run the
 <a href="../../macros/TextDemo.txt">TextDemo</a> macro.
 <p>
 
+<a name="setFont_user"></a>
 <b>setFont("user")</b><br>
 Sets the font to the one defined in the <i>Edit&gt;Options&gt;Fonts</i> window.
 See also: 
@@ -4199,6 +4312,7 @@ See also:
 <a href="#setBackgroundColor">setBackgroundColor</a>.
 <p>
 
+<a name="setForegroundColor_rgb"></a>
 <b>setForegroundColor(rgb)</b><br>
 Sets the foreground color, where <i>rgb</i> is an RGB pixel value.
 See also: 
@@ -4246,6 +4360,7 @@ See also:
 <a href="#screenHeight">screenHeight</a>. 
 <p>
 
+<a name="setLocation_resize"></a>
 <b>setLocation(x, y, width, height)</b><br>
 Moves and resizes the active image window. The new location of the top-left
 corner is specified by <i>x</i> and <i>y</i>, and the
@@ -4274,6 +4389,7 @@ See also: <a href="#getMetadata">getMetadata</a> and
 <a href="#Property.getInfo">Property.getInfo</a>. 
 <p>
 
+<a name="setMetadata_label"></a>
 <b>setMetadata("Label", string)</b><br>
 Sets <i>string</i> as the label of the current image or stack slice.
 The first 60 characters, or up to the first newline, 
@@ -4291,6 +4407,7 @@ See the
 for examples.
 <p>
 
+<a name="setMinAndMax_channels"></a>
 <b>setMinAndMax(min, max, channels)</b><br>
 Sets the display range of specified channels in an RGB image,
 where 4=red, 2=green, 1=blue, 6=red+green, etc.
@@ -4304,6 +4421,8 @@ do not have a LUT for each channel.
 These functions enable or disable ImageJ options, where
 <i>boolean</i> is either <i>true</i> or <i>false</i>.
  <blockquote>
+
+<a name="setOption_measurement"></a>
 <b>setOption(measurement, boolean)</b><br>
  Enable/disables <i>Analyze&gt;Set Measurements</i> options where
  'measurement' can be <i>"Display label"</i>, <i>"Limit to threshold"</i>,
@@ -4311,86 +4430,107 @@ These functions enable or disable ImageJ options, where
  <i>"Stack position"</i> or <i>"Add to overlay"</i>.
  <br>
  <b>setOption("AntialiasedText", boolean)</b><br>
+
+<a name="setOption_AntialiasedText"></a>
 Controls the "Antialiased text" option in the
  <i>Edit&gt;Options&gt;Fonts</i> dialog.
  Requires v1.51h.
 <br>
+
+<a name="setOption_AutoContrast"></a>
 <b>setOption("AutoContrast", boolean)</b><br>
 Enables/disables the <i>Edit&gt;Options&gt;Appearance</i>
 "Auto contrast stacks" option. You can also have newly displayed stack slices contrast
 enhanced by holding the shift key down when navigating stacks.
 <br>
+<a name="setOption_Bicubic"></a>
 <b>setOption("Bicubic", boolean)</b><br>
 Provides a way to force commands like <i>Edit&gt;Selection&gt;Straighten</i>, that normally use
 bilinear interpolation, to use bicubic interpolation.
 <br>
+<a name="setOption_BlackBackground"></a>
 <b>setOption("BlackBackground", boolean)</b><br>
 Enables/disables the <i>Process&gt;Binary&gt;Options</i>
 "Black background" option.
  <br>
+<a name="setOption_Changes"></a>
 <b>setOption("Changes", boolean)</b><br>
 Sets/resets the 'changes' flag of the current image. Set this option <i>false</i> to
 avoid  "Save Changes?" dialog boxes when closing images.
 <br>
+<a name="setOption_CopyHeaders"></a>
 <b>setOption("CopyHeaders", boolean)</b><br>
 Enables/disables the "Copy column headers" option in the
 <i>Edit&gt;Options&gt;Input/Output</i> dialog.
 See <a href="#String.copyResults">String.copyResults</a>
 Requires v1.52p.
 <br>
+<a name="setOption_DebugMode"></a>
 <b>setOption("DebugMode", boolean)</b><br>
 Enables/disables the ImageJ debug mode. ImageJ displays information, such
 as TIFF tag values, when it is in debug mode.
  <br>
+<a name="setOption_DisablePopupMenu"></a>
 <b>setOption("DisablePopupMenu", boolean)</b><br>
 Enables/disables the the menu displayed when
 you right click on an image.
 <br>
+<a name="setOption_DisableUndo"></a>
 <b>setOption("DisableUndo", boolean)</b><br>
  Enables/disables the <i>Edit&gt;Undo</i> command. Note
   that a <i>setOption("DisableUndo", true)</i> call without a corresponding <i>setOption("DisableUndo", false)</i> will cause 
   <i>Edit&gt;Undo</i> to not work as expected until ImageJ is restarted.
 <br>
+<a name="setOption_ExpandableArrays"></a>
 <b>setOption("ExpandableArrays", boolean)</b><br>
 Enables/disables support for auto-expanding arrays
   (<a href="../../macros/examples/ExpandableArrays.txt">example</a>).
 <br>
+<a name="setOption_FlipFitsImages"></a>
 <b>setOption("FlipFitsImages", boolean)</b><br>
 Controls whether images are flipped vertically by the FITS reader.
 <br>
+<a name="setOption_FullRange16bitInversions"></a>
 <b>setOption("FullRange16bitInversions", boolean)</b><br>
 Set to have 16-bit images inverted using the full range (0-65535).
 Requires 1.54d.
 <br>
+<a name="setOption_InterpolateLines"></a>
 <b>setOption("InterpolateLines", boolean)</b><br>
 Sets/resets the 'Interpolate line profiles' option in <i>Edit&gt;Options&gt;Plots</i>.
 <br>
+<a name="setOption_InvertY"></a>
 <b>setOption("InvertY", boolean)</b><br>
 Sets/resets the 'invertY' option of the active image.
 <br>
+<a name="setOption_JFileChooser"></a>
 <b>setOption("JFileChooser", boolean)</b><br>
 Enables/disables use of the Java JFileChooser to open and save files
  instead of the native OS file chooser.
  <br>
+<a name="setOption_Loop"></a>
 <b>setOption("Loop", boolean)</b><br>
 Enables/disables the <i>Image&gt;Stacks&gt;Tools&gt;Animation Options</i> "Loop back and forth" option.
  <br>
+<a name="setOption_MonospacedText"></a>
 <b>setOption("MonospacedText", boolean)</b><br>
 Enables/disables monospaced text in the "Log" window.
 Requires 1.54c11.
  <br>
+<a name="setOption_OpenUsingPlugins"></a>
 <b>setOption("OpenUsingPlugins", boolean)</b><br>
  Controls whether standard file types (TIFF, JPEG, GIF, etc.) are opened by external
  plugins or by ImageJ
  (<a href="../../macros/ToggleOpenUsingPlugins.txt">example</a>).
  <br>
+<a name="setOption_QueueMacros"></a>
 <b>setOption("QueueMacros", boolean)</b><br>
 Controls whether macros invoked using keyboard shortcuts
  run sequentially on the event dispatch thread (EDT) or in separate, possibly concurrent, threads
   (<a href="../../macros/DodgeBurnAndSmooth.txt">example</a>). 
   In "QueueMacros" mode, screen updates, which also run on the EDT, are delayed until the macro finishes.
  <br>
- 
+<a name="setOption_ScaleConversions"></a>
 <b>setOption("ScaleConversions", boolean)</b><br>
 Enables/disables the "Scale when converting" option in the
 <i>Edit&gt;Options&gt;Conversions</i> dialog.
@@ -4405,31 +4545,35 @@ Call <i>setOption("CalibrateConversions", true)</i> to have
 conversions to 8-bit and 16-bit density calibrated.
 Requires v1.52k.
 <br>
-
+<a name="setOption_CalibrateConversions"></a>
 <b>setOption("CalibrateConversions", boolean)</b><br>
 Enables/disables the "Calibrate conversions" option in the
 <i>Edit&gt;Options&gt;Conversions</i> dialog. Conversions
 to 8-bit and 16-bit are density calibrated when this
 option is enabled, so results from measurements stay the same.
 <br>
-
+<a name="setOption_Show_All"></a>
 <b>setOption("Show All", boolean)</b><br>
 Enables/disables the the "Show All" mode in the ROI Manager.
 <br>
+<a name="setOption_ShowAngle"></a>
 <b>setOption("ShowAngle", boolean)</b><br>
 Determines whether or not  the "Angle" value is displayed in the Results window
 when measuring straight line lengths.
 <br>
+<a name="setOption_ShowMin"></a>
 <b>setOption("ShowMin", boolean)</b><br>
 Determines whether or not  the "Min" value is displayed in the Results window
 when "Min & Max Gray Value" is enabled in the <i>Analyze&gt;Set Measurements</i> dialog box.
 <br>
+<a name="setOption_WaitForCompletion"></a>
 <b>setOption("WaitForCompletion", boolean)</b><br>
 Set <i>false</i> and the next <a href="#exec">exec()</a>
 call will return null and not wait for the command being
 executed to finish.
 Requires v1.52u.
 <br>
+<a name="setOption_WandAllPoints"></a>
 <b>setOption("WandAllPoints", boolean)</b><br>
  Controls whether Wand selections with straight lines longer
  than one pixel should have intermediate points with single-pixel spacing.
@@ -4539,6 +4683,7 @@ See also:
 <a href="#getToolName">IJ.getToolName</a>.
 <p>
 
+<a name="setTool_id"></a>
 <b>setTool(id)</b><br>
 Switches to the specified tool, where 0=rectangle, 1=oval, 2=polygon, 3=freehand,
 4=straight line, 5=polyline, 6=freeline, 7=point, 8=wand, 9=text, 10=unused,
@@ -4578,6 +4723,7 @@ Displays "message" in a dialog box. Can display HTML formatted
 text (<a href="../../macros/HtmlDialogDemo.txt">example</a>).
 <p>
 
+<a name="showMessage_title"></a>
 <b>showMessage("title", "message")</b><br>
 Displays "message" in a dialog box using "title" as the
 the dialog box title.  Can display HTML formatted
@@ -4602,6 +4748,7 @@ Use negative values to show subordinate progress bars as moving dots
 (<a href="../../macros/examples/DualProgressDemo.txt">example</a>).
 <p>
 
+<a name="showProgress_index"></a>
 <b>showProgress(currentIndex, finalIndex)</b><br>
 Updates the progress bar, where the length of the bar is set to
 <i>currentIndex</i>/<i>finalIndex</i> of the maximum bar length.
@@ -4622,6 +4769,7 @@ process messages are suppressed
 Displays a string in a text window.
 <p>
 
+<a name="showText_title"></a>
 <b>showText("Title", "string")</b><br>
 Displays a string in a text window using the specified title.
 <p>
@@ -4944,6 +5092,7 @@ Requires 1.52s. Can be replaced with string.trim() in ImageJ 1.52t and later.
 Displays <i>str</i> in a text window.
 <br>
 
+<a name="String.show_title"></a>
 <b>String.show(title, str)</b><br>
 Displays <i>str</i> in a text window using <i>title</i> as the title.
 <br>
@@ -4968,6 +5117,7 @@ See also:
 <a href="#replace">replace</a>.
 <p>
 
+<a name="substring_start"></a>
 <b>substring(string, index)</b><br>
 Returns a substring of <i>string</i> that
 begins at <i>index</i> and extends to the end of <i>string</i>. 
@@ -5162,6 +5312,7 @@ Converts unscaled pixel coordinates to scaled coordinates using
 the properties of the current image or plot. Also accepts arrays.
 <p>
 
+<a name="toScaled_x_y_z"></a>
 <b>toScaled(x, y, z)</b><br>
 Converts unscaled (x, y, z) pixel coordinates to scaled coordinates.
 <p>
@@ -5175,10 +5326,12 @@ Refer to the
 macro set for examples.
 <p>
 
+<a name="toUnscaled_x_y_z"></a>
 <b>toUnscaled(x, y, z)</b><br>
 Converts scaled (x, y, z) pixel coordinates to unscaled (raw) coordinates.
 <p>
 
+<a name="toScaled_length"></a>
 <b>toScaled(length)</b><br>
 Converts (in place) a horizontal length in pixels to a scaled
 length using the properties of the current image.
@@ -5186,6 +5339,7 @@ In a plot with Log scale, the scaled value is regarded
 as an exponent of 10.
 <p>
 
+<a name="toUnscaled_length"></a>
 <b>toUnscaled(length)</b><br>
 Converts (in place) a scaled horizontal length to a length
 in pixels using the properties of the current image.
@@ -5203,6 +5357,7 @@ See also:
 <a href="#parseInt">parseInt</a>.
 <p>
 
+<a name="toString_decimalPlaces"></a>
 <b>toString(number, decimalPlaces)</b><br>
 Converts <i>number</i> into a string, 
 using the specified number of decimal places.
@@ -5251,11 +5406,13 @@ Example:
 <a href="../../macros/WaitForUserDemo.txt">WaitForUserDemo</a>.
 <p>
 
+<a name="waitForUser_title"></a>
 <b>waitForUser(title, message)</b><br>
 This is a two argument version of <i>waitForUser</i>, where <i>title</i> is the dialog box title
 and <i>message</i> is the text displayed in the dialog.
 <p>
 
+<a name="waitForUser_no_arguement"></a>
 <b>waitForUser</b><br>
 This is a no argument version of <i>waitForUser</i> that displays "Click OK to continue"
 in the dialog box.
