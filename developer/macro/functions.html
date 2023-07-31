@@ -241,8 +241,8 @@ is called or when the macro terminates.
 Emits an audible beep.
 <p>
 
-<b>bitDepth() </b><br> 
 <a name="bitDepth"></a>
+<b>bitDepth()</b><br> 
 Returns the bit depth of the active image: 8, 16, 24 (RGB) or 32 (float).
 
 <p>
@@ -2214,7 +2214,7 @@ Loads the key/value pairs in the string <i>list</i>.<br>
 Returns the list as a string.<br>
 
 <a name="List.setMeasurements"></a>
-<b> List.setMeasurements</b> - 
+<b>List.setMeasurements</b> - 
 Measures the current image or selection and loads the resulting
 keys (Results table column headings) and values into the list.
 Use <i>List.setMeasurements("limit")</i> to measure using the
@@ -2229,8 +2229,8 @@ function to get a single measurement value. Examples: <i>getValue("Mean")</i>,
 <i>getValue("Mean limit")</i> and <i>getValue("Mean raw")</i>.
 <br>
 
-<b> List.setMeasurements("limit")</b> - 
 <a name="List.setMeasurements_limit"></a>
+<b>List.setMeasurements("limit")</b> - 
 This is a version of List.setMeasurements that enables the
 "Limit to threshold" option.
 <br>
@@ -2512,11 +2512,6 @@ Returns the square root of <i>n</i>, or NaN if <i>n</i> is less than zero.
 Returns the tangent of an angle (in radians).
 <br>
 
-<a name="Math.tan"></a>
-<b>Math.tan(n)</b><br>
-Returns the tangent of an angle (in radians).
-<br>
-
 <a name="Math.toRadians"></a>
 <b>Math.toRadians(degrees)</b><br>
 Converts an angle in degrees to an equivalent angle in radians.
@@ -2678,7 +2673,7 @@ Draws a line from the current location to (<i>x, y</i>) .
 
 <a name="Overlay.drawLine"></a>
 <b>Overlay.drawLine(x1, y1, x2, y2)</b><br>
-Draws a line between (<i>x1, y1</i>) and (<i>x2, y2</i>)). 
+Draws a line between (<i>x1, y1</i>) and (<i>x2, y2</i>). 
 <br>
 
 <a name="Overlay.add"></a>
@@ -2905,7 +2900,7 @@ Requires 1.53h.
 <a name="Overlay.fill_clear"></a>
 <b>Overlay.fill(color1, color2)</b><br>
 Fills all the selections in the overlay with 'color1' after
-clearing the the image to 'color2'.
+clearing the image to 'color2'.
 Requires 1.53h.
 <br>
 
@@ -3000,7 +2995,7 @@ Requires 1.52q.
 Creates a 'staircase' histogram from array 'values'. 
 If 'binWidth' is 0, automatic binning is applied. 
 'binCenter' is optional with default=0. BinCenter can, for example,
-be set to an expected symmetry point for avoiding artificial asymmetry. 
+be set to an expected symmetry point for avoiding artificial asymmetry.
 Requires 1.52f. 
 <br>
 
@@ -3070,7 +3065,7 @@ Sets the background color of the plot frame
 <a name="Plot.setLineWidth"></a>
 <b>Plot.setLineWidth(width)</b><br>
 Specifies the width of the line used to draw a curve. Symbols (circle, box, etc.)
-are also drawn larger if a line width greater than one is specified. 
+are also drawn larger if a line width greater than one is specified.
 Note that the curve specified in <i>Plot.create()</i>
 is the last one drawn before the plot is displayed or updated.
 <br>
@@ -3966,7 +3961,7 @@ Requires 1.53d.
 <a name="RoiManager.getName"></a>
 <b>RoiManager.getName(index)</b><br>
 Returns the name of the selection with the specified index, or an empty string
-if the selection does not have a name..
+if the selection does not have a name.
 <br>
 
 <a name="RoiManager.getIndex"></a>
@@ -4442,9 +4437,9 @@ These functions enable or disable ImageJ options, where
  <i>"Area"</i>, <i>"Mean"</i>, <i>"Std"</i>, <i>"Perimeter"</i>,
  <i>"Stack position"</i> or <i>"Add to overlay"</i>.
  <br>
- <b>setOption("AntialiasedText", boolean)</b><br>
 
 <a name="setOption_AntialiasedText"></a>
+<b>setOption("AntialiasedText", boolean)</b><br>
 Controls the "Antialiased text" option in the
  <i>Edit&gt;Options&gt;Fonts</i> dialog.
  Requires v1.51h.
@@ -4490,14 +4485,14 @@ you right click on an image.
 <br>
 <a name="setOption_DisableUndo"></a>
 <b>setOption("DisableUndo", boolean)</b><br>
- Enables/disables the <i>Edit&gt;Undo</i> command. Note
-  that a <i>setOption("DisableUndo", true)</i> call without a corresponding <i>setOption("DisableUndo", false)</i> will cause 
-  <i>Edit&gt;Undo</i> to not work as expected until ImageJ is restarted.
+Enables/disables the <i>Edit&gt;Undo</i> command. Note
+that a <i>setOption("DisableUndo", true)</i> call without a corresponding <i>setOption("DisableUndo", false)</i> will cause 
+<i>Edit&gt;Undo</i> to not work as expected until ImageJ is restarted.
 <br>
 <a name="setOption_ExpandableArrays"></a>
 <b>setOption("ExpandableArrays", boolean)</b><br>
 Enables/disables support for auto-expanding arrays
-  (<a href="../../macros/examples/ExpandableArrays.txt">example</a>).
+(<a href="../../macros/examples/ExpandableArrays.txt">example</a>).
 <br>
 <a name="setOption_FlipFitsImages"></a>
 <b>setOption("FlipFitsImages", boolean)</b><br>
@@ -4519,30 +4514,30 @@ Sets/resets the 'invertY' option of the active image.
 <a name="setOption_JFileChooser"></a>
 <b>setOption("JFileChooser", boolean)</b><br>
 Enables/disables use of the Java JFileChooser to open and save files
- instead of the native OS file chooser.
- <br>
+instead of the native OS file chooser.
+<br>
 <a name="setOption_Loop"></a>
 <b>setOption("Loop", boolean)</b><br>
 Enables/disables the <i>Image&gt;Stacks&gt;Tools&gt;Animation Options</i> "Loop back and forth" option.
- <br>
+<br>
 <a name="setOption_MonospacedText"></a>
 <b>setOption("MonospacedText", boolean)</b><br>
 Enables/disables monospaced text in the "Log" window.
 Requires 1.54c11.
- <br>
+<br>
 <a name="setOption_OpenUsingPlugins"></a>
 <b>setOption("OpenUsingPlugins", boolean)</b><br>
- Controls whether standard file types (TIFF, JPEG, GIF, etc.) are opened by external
- plugins or by ImageJ
- (<a href="../../macros/ToggleOpenUsingPlugins.txt">example</a>).
- <br>
+Controls whether standard file types (TIFF, JPEG, GIF, etc.) are opened by external
+plugins or by ImageJ
+(<a href="../../macros/ToggleOpenUsingPlugins.txt">example</a>).
+<br>
 <a name="setOption_QueueMacros"></a>
 <b>setOption("QueueMacros", boolean)</b><br>
 Controls whether macros invoked using keyboard shortcuts
- run sequentially on the event dispatch thread (EDT) or in separate, possibly concurrent, threads
-  (<a href="../../macros/DodgeBurnAndSmooth.txt">example</a>). 
-  In "QueueMacros" mode, screen updates, which also run on the EDT, are delayed until the macro finishes.
- <br>
+run sequentially on the event dispatch thread (EDT) or in separate, possibly concurrent, threads
+(<a href="../../macros/DodgeBurnAndSmooth.txt">example</a>). 
+In "QueueMacros" mode, screen updates, which also run on the EDT, are delayed until the macro finishes.
+<br>
 <a name="setOption_ScaleConversions"></a>
 <b>setOption("ScaleConversions", boolean)</b><br>
 Enables/disables the "Scale when converting" option in the
@@ -4846,7 +4841,7 @@ Returns the dimensions of the current image.
 <b>Stack.setDimensions(channels, slices, frames)</b> - 
 Sets the 3rd, 4th and 5th dimensions of the current stack.
 <br>
-	
+
 <a name="Stack.setChannel"></a>
 <b>Stack.setChannel(n)</b> - 
 Displays channel <i>n</i> .
@@ -5265,7 +5260,7 @@ Enable/disable display of row indexes.
 The column header row is not saved if the argument is 'false' (default is 'true').
 <br>
 <a name="Table.showArrays"></a>
-<b> Table.showArrays(title, array1, array2, ...)</b> - 
+<b>Table.showArrays(title, array1, array2, ...)</b> - 
 Displays arrays in a table (same as <a href="#Array.show">Array.show</a>).
 If <i>title</i> ends with "(indexes)", a 0-based Index column is shown.
 If it ends with "(row numbers)", the row number column is shown.
