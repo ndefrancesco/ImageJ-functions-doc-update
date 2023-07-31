@@ -258,7 +258,7 @@ image does not have a calibration function.
 Calls a public static method in a Java class, passing an arbitrary number
 of string arguments, and returning a string. Refer to the
 <a href="../../macros/CallJavaDemo.txt">CallJavaDemo</a> macro
-and the <a href="http://imagej.net/ij/plugins/imp-props.html">ImpProps</a>
+and the <a href="https://imagej.net/ij/plugins/imp-props.html">ImpProps</a>
 plugin for examples.
 <p>
 
@@ -537,7 +537,7 @@ to retrieve the file path. Requires 1.53d.
 <b>Dialog.addImage(pathOrURL)</b> -
 Adds an image to the dialog. The 'pathOrURL' argument can be a
 file path (e.g., "/Users/wayne/Downloads/blobs.tif")
-or a URL (e.g., "http://imagej.net/images/blobs.gif").
+or a URL (e.g., "https://imagej.net/images/blobs.gif").
 <br>
 <a name="Dialog.addImageChoice"></a>
 <b>Dialog.addImageChoice(label)</b> -
@@ -743,13 +743,13 @@ either "true" or "false".
 
 <b>eval("bsh", script)</b><br>
 Evaluates the
-<a href="http://imagej.net/ij/plugins/bsh/index.html">BeanShell</a>
+<a href="https://imagej.net/ij/plugins/bsh/index.html">BeanShell</a>
 code contained in the string <i>script</i>.
 <p>
 
 <b>eval("python", script)</b><br>
 Evaluates the
-<a href="http://imagej.net/ij/plugins/jython/index.html">Python</a>
+<a href="https://imagej.net/ij/plugins/jython/index.html">Python</a>
 code contained in the string <i>script</i>.
 <p>
 
@@ -784,9 +784,9 @@ Returns the exponential number e (i.e., 2.718...) raised to the power of <i>n</i
 <b>Ext (Macro Extension) Functions</b><br>
 These are functions that have been added to the macro language by plugins using
 the MacroExtension interface. The
-<a href="http://imagej.net/ij/plugins/5d-extensions.html">Image5D_Extensions</a>
+<a href="https://imagej.net/ij/plugins/5d-extensions.html">Image5D_Extensions</a>
 plugin, for example, adds functions that work with Image5D. The
-<a href="http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:serial_macro_extensions:start">Serial Macro Extensions</a>
+<a href="https://imagej.net/plugins/serial-macro-extensions">Serial Macro Extensions</a>
 plugin adds functions, such as Ext.open("COM8", 9600, "") and Ext.write("a"), that talk to serial devices.
 
 <p>
@@ -1163,7 +1163,7 @@ Returns the cursor location in pixels and the mouse event modifier flags.
 The <i>z</i> coordinate is zero for 2D images. For stacks, it is one less than the 
 slice number. Use <a href="#toScaled">toScaled(x, y)</a> to scale the coordinates.
 For examples, see the
-<a href="../../macros//GetCursorLocDemo.txt">GetCursorLocDemo</a>  and the
+<a href="../../macros/GetCursorLocDemo.txt">GetCursorLocDemo</a>  and the
 <a href="../../macros/tools/GetCursorLocDemoTool.txt">GetCursorLocDemoTool</a> macros.
 <p>
 
@@ -2480,7 +2480,7 @@ For more examples, see the
 <p>
 In ImageJ 1.53g or newer, arrays automatically expand in
 size as needed
-(<a href="http://wsr.imagej.net/macros/ExpandableArrays.txt">example</a>).
+(<a href="https://wsr.imagej.net/macros/ExpandableArrays.txt">example</a>).
 To use expandable arrays in earlier versions,
 call <i>setOption("ExpandableArrays", true)</i>.
 <p>
@@ -3505,7 +3505,7 @@ the fill color to both fill and outline the selection.
 <a name="Roi.setAntiAlias"></a>
 <b>Roi.setAntiAlias(boolean)</b><br>
 Controls whether anti-aliasing is used when drawing selections
-(<a href="http://wsr.imagej.net/macros/AntiAliasingDemo.txt">example</a>).
+(<a href="https://wsr.imagej.net/macros/AntiAliasingDemo.txt">example</a>).
 Requires 1.52p.
 <br>
 
@@ -4981,9 +4981,9 @@ Can be replaced with str.substring(i) in ImageJ 1.52t and later.
 These functions, added in ImageJ 1.52a, work with tables. They operate on the
 current (frontmost) table or, with most of the functions, an optional title argument
 can be provided (must be last argument).
-Examples: <a href="http://wsr.imagej.net/macros/Sine_Cosine_Table2.txt">Sine/Cosine Tables</a>,
-<a href="http://wsr.imagej.net/macros/Rearrange_Resuts_Table.txt">Rearrange Table</a> and
-<a href="http://wsr.imagej.net/macros/Access_Tables.txt">Access Tables</a>.
+Examples: <a href="https://wsr.imagej.net/macros/Sine_Cosine_Table2.txt">Sine/Cosine Tables</a>,
+<a href="https://wsr.imagej.net/macros/Rearrange_Resuts_Table.txt">Rearrange Table</a> and
+<a href="https://wsr.imagej.net/macros/Access_Tables.txt">Access Tables</a>.
 <p>
 <blockquote>
 
@@ -5085,7 +5085,7 @@ Deletes specified rows.
 <a name="Table.sort"></a>
 <b>Table.sort(column)</b> - 
 Sorts the table on the specified column
-(<a href="http://wsr.imagej.net/macros/LabelParticlesBySize.txt">example</a>).
+(<a href="https://wsr.imagej.net/macros/LabelParticlesBySize.txt">example</a>).
 <br>
 <a name="Table.showRowNumbers"></a>
 <b>Table.showRowNumbers(boolean)</b> - 
@@ -5246,7 +5246,7 @@ To display a multi-line
 message, add newline characters ("\n") to <i>string</i>. 
 This function is based on 
 Michael Schmid's
-<a href="http://imagejdocu.tudor.lu/imagej-documentation-wiki/plugins/wait_for_user">Wait_For_User</a> plugin.
+<a href="https://imagejdocu.tudor.lu/imagej-documentation-wiki/plugins/wait_for_user">Wait_For_User</a> plugin.
 Example:
 <a href="../../macros/WaitForUserDemo.txt">WaitForUserDemo</a>.
 <p>
