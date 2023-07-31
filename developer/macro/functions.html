@@ -489,7 +489,7 @@ Adds a slider controlled numeric field to the dialog, using the specified label,
 and min, max and default values
 (<a href="../../macros/examples/SliderDemo.txt">example</a>).
 Values with decimal points are used when 
-(max-min)<=5 and min, max or default
+(max-min)&lt;=5 and min, max or default
 are non-integer.
 <br>
 <a name="Dialog.addCheckbox"></a>
@@ -2188,7 +2188,7 @@ and <a href="#Roi.setStrokeColor">Roi.setStrokeColor</a>.
 <a name="makeEllipse"></a>
 <b>makeEllipse(x1, y1, x2, y2, aspectRatio)</b><br>
 Creates an elliptical selection, where <i>x1,y1,x2,y2</i> specify the major axis of the 
-ellipse and <i>aspectRatio</i> (<=1.0) is the ratio of the lengths of minor and major axis.
+ellipse and <i>aspectRatio</i> (&lt;=1.0) is the ratio of the lengths of minor and major axis.
 <p>
 
 <a name="makeLine"></a>
@@ -4594,7 +4594,7 @@ See also: <a href="#getBoolean">getBoolean</a>.
 
 <a name="showProgress"></a>
 <b>showProgress(progress)</b><br>
-Updates the ImageJ progress bar, where 0.0<=<i>progress</i>&lt;=1.0. The progress bar is 
+Updates the ImageJ progress bar, where 0.0&lt;=<i>progress</i>&lt;=1.0. The progress bar is 
 not displayed if the time between the first and second calls to this function
 is less than 30 milliseconds. It is erased when the macro terminates 
 or <i>progress</i> is &gt;=1.0.
