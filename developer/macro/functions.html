@@ -1203,12 +1203,25 @@ See also: <a href="#getTime">getTime</a>.
 Returns the dimensions of the current image.
 <p>
 
- <a name="getDirectory"></a>
-<a name="getDir"></a>
-<b>getDirectory(string)</b> or <b>getDir(string)</b><br>
+<a name="getDirectory"></a>
+<b>getDirectory(string)</b><br>
 Displays a "choose directory" dialog and returns the selected directory, or returns
 the path to a specified directory, such as "plugins", "home", etc.
-The returned path ends with the file separator ("/").
+The returned path ends with the file separator (either "/" or "\" depending on the OS).
+Returns an empty string if the specified directory is not found or 
+aborts the macro if the user cancels the "choose directory" dialog box.
+For examples, see the
+<a href="../../macros/GetDirectoryDemo.txt">GetDirectoryDemo</a> and
+<a href="../../macros/ListFilesRecursively.txt">ListFilesRecursively</a> macros.
+See also: <a href="#getFileList">getFileList</a> and the <a href="#file">File functions</a>.
+
+<p>
+<a name="getDir"></a>
+<b>getDir(string)</b><br>
+An alias of <a href="#getDirectory">getDirectory</a> since 1.49q.<br>
+Displays a "choose directory" dialog and returns the selected directory, or returns
+the path to a specified directory, such as "plugins", "home", etc.
+The returned path ends with the file separator (either "/" or "\" depending on the OS).
 Returns an empty string if the specified directory is not found or 
 aborts the macro if the user cancels the "choose directory" dialog box.
 For examples, see the
